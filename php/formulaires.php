@@ -3,6 +3,6 @@
 
    template_meta('Formulaires');
 
-   template_header('index');
+   template_header('Formulaires');
 
 ?>

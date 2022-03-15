@@ -22,13 +22,13 @@ function template_header($title) {
     echo<<<EOT
     <header class="row align-items-center ">
 
-        <a href="" class="col-2">Formulaire</a>
-        <a href="" class="col-1">BDD</a>
-        <a href="" class="col-1">Affichage</a>
-        <a href="" class="col-1">Factures</a>
-        <a href="" class="col-1">Fiches écoles</a>
-        <a href="" class="col-2">Enregistrement des commandes</a>
-        <a href="" class="col-2">Admnistrateur</a>
+        <a href="./formulaires.php" class="col-2">Formulaire</a>
+        <a href="./bdd.php" class="col-1">BDD</a>
+        <a href="./affichage.php" class="col-1">Affichage</a>
+        <a href="./factures.php" class="col-1">Factures</a>
+        <a href="./ficheecoles.php" class="col-1">Fiches écoles</a>
+        <a href="./enregcommandes.php" class="col-2">Enregistrement des commandes</a>
+        <a href="./admin.php" class="col-2">Admnistrateur</a>
         <button class="col-2">Se déconnecter</button>
 
     </header>
