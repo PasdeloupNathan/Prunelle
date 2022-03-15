@@ -20,6 +20,9 @@ header {
     }
 }
 
+/////////////
+//CONNEXION//
+/////////////
 .connexion {
     height: 80vh;
     width: 100%;
@@ -50,10 +53,40 @@ header {
             button {
                 margin-top: 5%;
                 width: 50%;
-                height: 30%;
+                height: 25%;
                 background-color: #DAFFE2;
-                border-radius: 5%;
+                border-radius: 7.5%;
                 font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+//////////////
+//FORMULAIRE//
+//////////////
+.formulaires {
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .content1 {
+        margin-top: 5%;
+        .inside1 {
+            button {
+                width: 40%;
+                height: 40%;
+                background-color: #DAFFE2;
+                border-radius: 7.5%;
+                font-size: 1.2rem;
+                font-weight: 500;
             }
         }
     }
