@@ -17,25 +17,24 @@
 
     </header>
 
-    <section class="connexion row align-items-center">
+    <section class="connexion align-items-center">
 
         <H1>Connexion</H1>
 
-        <form action="#" method="post">
-            <div class="input-group">
-                <input type="Id" placeholder="Identifiant" name="loginId" />
-            </div>
-            <div class="input-group">
-                <input type="password" placeholder="Mot De Passe" name="loginPassword" />
-            </div>
-            <button id="submit" type="submit" class="login-button">CONNEXION</button>
-        </form>
-
-
-
-        </form>
-
-
+        <div class="row form">
+            <div class="col-4"></div>
+            <form action="#" method="post" class="col-4">
+                <label for="id">Identifiant</label>
+                <div class="input-group">
+                    <input type="Id" placeholder="Identifiant" name="loginId" />
+                </div>
+                <label for="password">Mot de passe</label>
+                <div class="input-group">
+                    <input type="password" placeholder="Mot de passe" name="loginPassword" />
+                </div>
+                <button id="submit" type="submit" class="login-button">Se connecter</button>
+            </form>
+        </div>
     </section>
 
 
