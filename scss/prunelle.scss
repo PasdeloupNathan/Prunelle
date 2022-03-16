@@ -80,15 +80,47 @@ header {
     .content1 {
         margin-top: 5%;
         .inside1 {
-            button {
-                width: 40%;
-                height: 40%;
+            button#b1 {
+                width: 60%;
+                height: 27.5%;
                 background-color: #DAFFE2;
                 border-radius: 7.5%;
                 font-size: 1.2rem;
                 font-weight: 500;
+                margin-top: 10%;
+            }
+            select {
+                margin-top: 10%;
+            }
+            .buttonRow {
+                margin-top: 5%;
+                .buttonleft {
+                    text-align: end;
+                    button#b2 {
+                        border-radius: 7.5%;
+                        width: 70%;
+                        background-color: #FFF5DA;
+                        font-size: 1.2rem;
+                    }
+                }
+                .buttonright {
+                    text-align: start;
+                    button#b3 {
+                        border-radius: 7.5%;
+                        width: 70%;
+                        background-color: #FFDADA;
+                        font-size: 1.2rem;
+                    }
+                }
             }
         }
+    }
+    button#b4 {
+        margin-top: 6%;
+        height: 7.5%;
+        border-radius: 7.5%;
+        width: 10%;
+        background-color: #DAE2FF;
     }
 }
 
