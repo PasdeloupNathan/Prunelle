@@ -126,6 +126,96 @@ header {
     }
 }
 
+///////
+//BDD//
+///////
+.bdd {
+    height: 80vh;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}
+
+/////////////
+//AFFICHAGE//
+/////////////
+.affichage {
+    height: 80vh;
+    width: 100%;
+}
+
+////////////
+//FACTURES//
+////////////
+.factures {
+    height: 80vh;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .content4 {
+        .form4 {
+            form {
+                margin-left: 7.5%;
+                input#inp4 {
+                    width: 55%;
+                }
+                select {
+                    width: 55%;
+                }
+                label#lab4 {
+                    margin-top: 5%;
+                    width: 55%;
+                }
+                label#lab5 {
+                    width: 40%;
+                }
+                input#inpc {
+                    margin-top: 5%;
+                }
+                button#b4 {
+                    width: 55%;
+                    margin-top: 10%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/////////////////
+//FICHES//ECOLES//
+/////////////////
+.ficheecoles {
+    height: 80vh;
+    width: 100%;
+}
+
+//////////////////////////////////
+//ENREGISTREMENT//DES//COMMANDES//
+//////////////////////////////////
+.edc {
+    height: 80vh;
+    width: 100%;
+}
+
+//////////////////
+//ADMINISTRATEUR//
+//////////////////
+.admin {
+    height: 80vh;
+    width: 100%;
+}
+
 .row {
     margin: 0;
 }
