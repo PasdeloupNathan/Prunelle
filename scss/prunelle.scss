@@ -211,8 +211,28 @@ header {
         text-decoration: underline;
     }
     .content5 {
-        form {
+        .form5 {
             margin-top: 5%;
+            form {
+                margin-left: 7.5%;
+                label#lab6 {
+                    width: 60%;
+                }
+                input#inp5 {
+                    width: 60%;
+                    margin-top: 2%;
+                }
+            }
+            button#b6 {
+                margin-left: 7.5%;
+                width: 55%;
+                margin-top: 25%;
+                height: 35%;
+                background-color: #DAE2FF;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border-radius: 7.5%;
+            }
         }
     }
 }
