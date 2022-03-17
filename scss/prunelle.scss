@@ -240,9 +240,50 @@ header {
 //////////////////////////////////
 //ENREGISTREMENT//DES//COMMANDES//
 //////////////////////////////////
-.edc {
+.enregcommande {
     height: 80vh;
     width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 2.5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .content6 {
+        .form6 {
+            margin-top: 5%;
+            form {
+                margin-left: 7.5%;
+                input#inp5 {
+                    width: 55%;
+                }
+                select {
+                    width: 55%;
+                }
+                label#lab7 {
+                    margin-top: 5%;
+                    width: 55%;
+                }
+                label#lab8 {
+                    width: 45%;
+                }
+                input#inpc2 {
+                    margin-top: 5%;
+                }
+            }
+            button#b7 {
+                margin-left: 7.5%;
+                width: 50%;
+                margin-top: 10%;
+                height: 20%;
+                background-color: #DAE2FF;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border-radius: 7.5%;
+            }
+        }
+    }
 }
 
 //////////////////

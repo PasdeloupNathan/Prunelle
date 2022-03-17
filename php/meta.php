@@ -27,7 +27,7 @@ function template_header($title) {
         <a href="./affichage.php" class="col-1">Affichage</a>
         <a href="./factures.php" class="col-1">Factures</a>
         <a href="./ficheecoles.php" class="col-1">Fiches écoles</a>
-        <a href="./enregcommandes.php" class="col-2">Enregistrement des commandes</a>
+        <a href="./enregcommande.php" class="col-2">Enregistrement des commandes</a>
         <a href="./admin.php" class="col-2">Admnistrateur</a>
         <button class="col-2">Se déconnecter</button>
 
