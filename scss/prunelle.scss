@@ -292,6 +292,13 @@ header {
 .admin {
     height: 80vh;
     width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
 }
 
 .row {
