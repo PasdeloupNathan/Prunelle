@@ -46,7 +46,6 @@
             </div>
             <div class="inside1 col-3">
                 <h3>Empocheur</h3>
-
                 <button id="b1">Nouveau</button>
                 <br>
                 <select name="formulaires3" id="formulaires3"></select>
