@@ -13,11 +13,9 @@
 
             <div class="inside1 col-3">
                 <h3>Prise de vue</h3>
-
-                <button id="b1">Nouveau</button>
+                <button id="b1" onclick="window.location.href='./formulairePDV.php'">Nouveau</a></button>
                 <br>
                 <select name="formulaires1" id="formulaires1"></select>
-
                 <div class="row buttonRow">
                     <div class="col-6 buttonleft">
                         <button id="b2">Modifier</button>
@@ -31,7 +29,7 @@
             <div class="inside1 col-3">
                 <h3>Outpost</h3>
 
-                <button id="b1">Nouveau</button>
+                <button id="b1" onclick="window.location.href='./formulaireOutpost.php'">Nouveau</button>
                 <br>
                 <select name="formulaires2" id="formulaires2"></select>
 
@@ -46,7 +44,7 @@
             </div>
             <div class="inside1 col-3">
                 <h3>Empocheur</h3>
-                <button id="b1">Nouveau</button>
+                <button id="b1" onclick="window.location.href='./formulaireEmpocheur.php'">Nouveau</button>
                 <br>
                 <select name="formulaires3" id="formulaires3"></select>
 
@@ -62,7 +60,7 @@
             <div class="inside1 col-3">
                 <h3>Livraison</h3>
 
-                <button id="b1">Nouveau</button>
+                <button id="b1" onclick="window.location.href='./formulaireLivraison.php'">Nouveau</button>
                 <br>
                 <select name="formulaires4" id="formulaires4"></select>
 

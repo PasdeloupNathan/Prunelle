@@ -18,6 +18,7 @@ function template_meta($title) {
 EOT;
 }
 
+
 function template_header($title) {
     echo<<<EOT
     <header class="row align-items-center ">
