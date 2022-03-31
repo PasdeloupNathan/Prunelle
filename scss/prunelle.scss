@@ -237,14 +237,36 @@ header {
         text-decoration: underline;
     }
     .formBdd {
+        margin-top: 2.5%;
         .form11 {
             form {
                 .form11G {
-                    label
+                    text-align: end;
+                    label {
+                        width: 100%;
+                        margin-top: 2.5%;
+                    }
+                    select {
+                        height: 8.5%;
+                        width: 67%;
+                    }
                 }
                 .form11D {
-                    label
+                    label {
+                        width: 100%;
+                        margin-top: 2.5%;
+                    }
                 }
+            }
+            button#b12 {
+                margin-left: 32.5%;
+                width: 35%;
+                margin-top: 10%;
+                height: 14.5%;
+                background-color: #DAFFE2;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border-radius: 7.5%;
             }
         }
     }
