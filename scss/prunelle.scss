@@ -173,13 +173,40 @@ header {
 .formPDV {
     height: 80vh;
     width: 100%;
-    text-align: center;
     h1 {
         font-size: 4rem;
         text-align: center;
         padding-top: 5%;
         font-weight: 400;
         text-decoration: underline;
+    }
+    .formContent1 {
+        .form7 {
+            margin-top: 2.5%;
+            form {
+                margin-left: 7.5%;
+                input#inp8 {
+                    width: 55%;
+                }
+                select {
+                    width: 45%;
+                }
+                label#lab9 {
+                    margin-top: 5%;
+                    width: 55%;
+                }
+            }
+            button#b8 {
+                margin-left: 3.5%;
+                width: 50%;
+                margin-top: 10%;
+                height: 17.5%;
+                background-color: #DAFFE2;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border-radius: 7.5%;
+            }
+        }
     }
 }
 
@@ -195,6 +222,31 @@ header {
         padding-top: 5%;
         font-weight: 400;
         text-decoration: underline;
+    }
+}
+
+//BddAdd//
+.bddAdd {
+    height: 80vh;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .formBdd {
+        .form11 {
+            form {
+                .form11G {
+                    label
+                }
+                .form11D {
+                    label
+                }
+            }
+        }
     }
 }
 
