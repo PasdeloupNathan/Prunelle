@@ -439,6 +439,142 @@ header {
     }
 }
 
+//Produit//List//
+.produitList {
+    height: 80vh;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 2.5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    button#b10 {
+        left: 44%;
+        position: absolute;
+        width: 12%;
+        margin-top: 2%;
+        height: 7%;
+        background-color: #DAFFE2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 7.5%;
+    }
+}
+
+.produitAdd {
+    height: 80vh;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 2.5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .formAddProduit {
+        .form10 {
+            margin-top: 2.5%;
+            form {
+                margin-left: 10%;
+                select {
+                    width: 45%;
+                }
+                label#lab11 {
+                    margin-top: 5%;
+                    width: 55%;
+                }
+                input {
+                    margin-top: 2.5%;
+                }
+                input#inpc4 {
+                    margin-top: 5%;
+                }
+            }
+            button#b11 {
+                margin-left: 6%;
+                width: 50%;
+                margin-top: 10%;
+                height: 17.5%;
+                background-color: #DAFFE2;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border-radius: 7.5%;
+            }
+        }
+    }
+}
+
+//Produit//Add//
+//User//List//
+.userList {
+    height: 80vh;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 2.5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    button#b9 {
+        left: 44%;
+        position: absolute;
+        width: 12%;
+        margin-top: 2%;
+        height: 7%;
+        background-color: #DAFFE2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 7.5%;
+    }
+}
+
+//Create//User//
+.userCreate {
+    height: 80vh;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 2.5%;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .formAddUser {
+        .form9 {
+            margin-top: 2.5%;
+            form {
+                margin-left: 10%;
+                select {
+                    width: 45%;
+                }
+                label#lab10 {
+                    margin-top: 5%;
+                    width: 55%;
+                }
+                input {
+                    margin-top: 2.5%;
+                }
+                input#inpc3 {
+                    margin-top: 5%;
+                }
+            }
+            button#b8 {
+                margin-left: 6%;
+                width: 50%;
+                margin-top: 10%;
+                height: 20%;
+                background-color: #DAFFE2;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border-radius: 7.5%;
+            }
+        }
+    }
+}
+
 .row {
     margin: 0;
 }

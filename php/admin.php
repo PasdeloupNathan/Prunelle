@@ -12,8 +12,8 @@
 
 <div class="row content7">
     <h2 class="col-3">Codes outpost</h2>
-    <h2 class="col-3">Produits</h2>
-    <h2 class="col-3">Comptes utilisateurs</h2>
+    <h2 class="col-3" onclick="window.location.href='./produitList.php'">Produits</h2>
+    <h2 class="col-3" onclick="window.location.href='./userList.php'">Comptes utilisateurs</h2>
     <h2 class="col-3">Tableau Comptable</h2>
 </div>
 
