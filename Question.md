@@ -7,3 +7,5 @@ les different input
 Affichage
 
 form facture
+
+faire diagram de classe

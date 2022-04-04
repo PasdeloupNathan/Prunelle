@@ -25,6 +25,7 @@
             <label for="écolename" id="lab9">Nom de l'école</label>
             <input type="text" placeholder="Nom de l'école">
         </form>
+        
         <button id="b8">Enregistrer</button>
 
     </div>
