@@ -8,4 +8,6 @@ Affichage
 
 form facture
 
-faire diagram de classe
+faire diagram de classe et d'user
+
+
