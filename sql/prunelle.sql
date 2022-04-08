@@ -10,3 +10,22 @@ IF NOT EXISTS (
 )
 CREATE DATABASE Prunelle
 GO
+
+
+CREATE TABLE `user` (
+
+)
+
+
+CREATE TABLE `ecole` (
+
+)
+
+CREATE TABLE `intervenant` (
+
+)
+
+CREATE TABLE `produit` (
+    
+)
+
