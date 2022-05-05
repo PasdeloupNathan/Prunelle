@@ -1,9 +1,11 @@
 <?php
-   include 'meta.php';
+    session_start();
 
-   template_meta('Formulaires');
+    include 'meta.php';
 
-   template_header('Formulaires');
+    template_meta('Formulaires');
+
+    template_header('Formulaires');
 ?>
     <section class="formulaires align-items-center">
 

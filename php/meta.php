@@ -30,7 +30,7 @@ function template_header($title) {
         <a href="./ficheecoles.php" class="col-1">Fiches écoles</a>
         <a href="./enregcommande.php" class="col-2">Enregistrement des commandes</a>
         <a href="./admin.php" class="col-2">Administrateur</a>
-        <button class="col-2">Se déconnecter</button>
+        <button class="col-2" onclick="location.href='./deco.php'" >Se déconnecter</button>
  
     </header>
 EOT;

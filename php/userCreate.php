@@ -1,12 +1,14 @@
 <?php
-require 'model.php';
-$pdo = pdo_connect_mysql();
+    session_start();
+    
+    require 'model.php';
+    $pdo = pdo_connect_mysql();
 
-   include 'meta.php';
+    include 'meta.php';
 
-   template_meta('Utilisateur');
+    template_meta('Utilisateur');
 
-   template_header('Utilisateur');
+    template_header('Utilisateur');
 ?>
 
 
