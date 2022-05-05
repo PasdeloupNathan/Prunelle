@@ -1,28 +1,17 @@
--- Create a new database called 'DatabaseName'
--- Connect to the 'master' database to run this snippet
-USE main
-GO
--- Create the new database if it does not exist already
-IF NOT EXISTS (
-    SELECT name
-        FROM sys.databases
-        WHERE name = N'Prunelle'
-)
-CREATE DATABASE Prunelle
-GO
-
 
 CREATE TABLE `user` (
-  `ID` int(11) NOT NULL,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `USERNAME` varchar(320) NOT NULL,
   `MAIL` varchar(320) NOT NULL,
-  `PASSWORD` varchar(128) NOT NULL,
-)
+  `PASSWORD` varchar(128) NULL,
+  `ROLES` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 CREATE TABLE `ecole` (
   `CODEECOLE` int(11) NOT NULL,
-
+  PRIMARY KEY (`CODEECOLE`)
 )
 
 CREATE TABLE `intervenant` (
@@ -35,6 +24,21 @@ CREATE TABLE `produit` (
 
 )
 
+-- CREATE TABLE `PDV` (
+
+-- )
+-- CREATE TABLE `EMPOCHAGE` (
+
+-- )
+-- CREATE TABLE `OUTPOST` (
+
+-- )
+-- CREATE TABLE `LIVRAISON` (
+
+-- )
+-- CREATE TABLE `FACTURE` (
+
+-- )
 -- CREATE TABLE `PDV` (
 
 -- )

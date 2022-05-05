@@ -546,6 +546,7 @@ header {
         .form9 {
             margin-top: 2.5%;
             form {
+                height: 100%;
                 margin-left: 10%;
                 select {
                     width: 45%;
@@ -560,16 +561,15 @@ header {
                 input#inpc3 {
                     margin-top: 5%;
                 }
-            }
-            button#b8 {
-                margin-left: 6%;
-                width: 50%;
-                margin-top: 10%;
-                height: 20%;
-                background-color: #DAFFE2;
-                font-size: 1.2rem;
-                font-weight: 500;
-                border-radius: 7.5%;
+                button#b8 {
+                    width: 50%;
+                    margin-top: 10%;
+                    height: 20%;
+                    background-color: #DAFFE2;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    border-radius: 7.5%;
+                }
             }
         }
     }
