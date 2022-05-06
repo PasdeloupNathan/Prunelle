@@ -43,7 +43,7 @@
             foreach($user as $users){
                 var_dump($users);
                     //déclaration data
-                if($users['PASSWORD']==$password){
+                if($users['password']==$password){
                     $_SESSION['roles']=$users['roles'];
                     $_SESSION['username']=$users['username'];
                     $_SESSION['password']=$users['password'];

@@ -1,11 +1,11 @@
 
 CREATE TABLE `user` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `USERNAME` varchar(320) NOT NULL,
-  `MAIL` varchar(320) NOT NULL,
-  `PASSWORD` varchar(128) NULL,
-  `ROLES` varchar(128) NOT NULL,
-  PRIMARY KEY (`ID`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(320) NOT NULL,
+  `mail` varchar(320) NOT NULL,
+  `password` varchar(128) NULL,
+  `roles` varchar(128) NOT NULL,
+  PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
