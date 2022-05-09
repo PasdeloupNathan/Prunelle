@@ -9,17 +9,24 @@ include 'meta.php';
 template_meta('Utilisateur');
 
 template_header('Utilisateur');
+?>
 
+<section class="userList">
+
+    <h1>Utilisateurs</h1>
+
+<?php
 $test = $pdo->prepare("SELECT * from user");
 $test->execute();
 $user= $test->fetchAll(\PDO::FETCH_ASSOC);
-foreach($user as $users)
-?>
-<section class="userList">
+foreach($user as $users):echo
+<<<user
+  
+    <li > $users[username] | $users[mail]</li>
+  
+user;
+endforeach; ?>
 
-<h1>Utilisateurs</h1>
-
-<p><?= $users['username'];?> <?= $users['mail'];?> </p>
 
 <button id="b9" onclick="window.location.href='./userCreate.php'">Nouveau</button>
 </section>
@@ -29,5 +36,7 @@ foreach($user as $users)
 </html>
 
 <?php
+
+
 
 ?>
