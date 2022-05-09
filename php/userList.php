@@ -22,7 +22,7 @@ $user= $test->fetchAll(\PDO::FETCH_ASSOC);
 foreach($user as $users):echo
 <<<user
   
-    <li > $users[username] | $users[mail]</li>
+    <li > $users[username] | $users[mail] | $users[roles]</li>
   
 user;
 endforeach; ?>
@@ -36,6 +36,8 @@ endforeach; ?>
 </html>
 
 <?php
+
+
 
 
 

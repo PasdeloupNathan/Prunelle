@@ -68,7 +68,16 @@ function checkboxvalue() {
         echo '<script LANGUAGE="javascript">document.location.href="admin.php"</script>';
  die(userCreate($roles,$username,$mail));
     }
-    }
+}
+
+$to = "pasdeloupnathan@gmail.com, ";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: pasdeloupnathan@gmail.com" . "\r\n" .
+"CC: gamee8678@gmail.com";
+
+mail($to,$subject,$txt,$headers);
+
 
 ?>
 
