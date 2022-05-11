@@ -38,6 +38,4 @@
 
     </section>
 
-<?php
-
-?>
+    <?php template_footer() ?>

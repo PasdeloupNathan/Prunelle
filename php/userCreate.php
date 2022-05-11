@@ -42,15 +42,6 @@
 </div>
 
 </section>
-<script>
-function checkboxvalue() {
- document.getElementById("inpc3").value = document.getElementById("inpc3").checked ? 'admin' : 'notadmin';
-
- console.log( document.getElementById("inpc3").value);
-} 
-
-
-</script>
 
 
 <?php

@@ -10,5 +10,4 @@
         <H1>Formulaires Empocheur</H1>
         </section>
 
-<?php
-?>
+        <?php template_footer() ?>

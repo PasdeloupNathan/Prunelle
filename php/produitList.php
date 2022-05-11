@@ -32,10 +32,6 @@ endforeach; ?>
 <button id="b10" onclick="window.location.href='./produitAdd.php'">Nouveau</button>
 </section>
 
-</body>
 
-</html>
 
-<?php
-
-?>
+<?php template_footer() ?>

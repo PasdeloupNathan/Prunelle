@@ -61,4 +61,4 @@
     }
 ?>
 
-</body>
+<?php template_footer() ?>

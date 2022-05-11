@@ -31,14 +31,6 @@ endforeach; ?>
 <button id="b9" onclick="window.location.href='./userCreate.php'">Nouveau</button>
 </section>
 
-</body>
-
-</html>
-
-<?php
 
 
-
-
-
-?>
+<?php template_footer() ?>

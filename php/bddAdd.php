@@ -60,6 +60,4 @@
 
 </html>
 
-<?php
-
-?>
+<?php template_footer() ?>

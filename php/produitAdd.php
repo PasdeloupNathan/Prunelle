@@ -42,15 +42,7 @@ template_header('Produits');
 
 </div>
 </section>
-<script>
-function checkboxvalue2() {
- document.getElementById("inpc4").value = document.getElementById("inpc4").checked ? 'oui' : 'non';
 
- console.log( document.getElementById("inpc4").value);
-} 
-
-
-</script>
 
 <?php
         if(isset($_POST['produitAdd'])){
@@ -71,11 +63,5 @@ function checkboxvalue2() {
 }
 
 ?>
-</body>
 
-</html>
-
-
-
-<?php
-?>
+<?php template_footer() ?>

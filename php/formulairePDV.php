@@ -34,9 +34,4 @@
 
 </section>
 
-</body>
-
-</html>
-
-<?php
-?>
+<?php template_footer() ?>

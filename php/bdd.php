@@ -6,3 +6,6 @@
    template_header('bdd');
 
 ?>
+
+
+<?php template_footer() ?>

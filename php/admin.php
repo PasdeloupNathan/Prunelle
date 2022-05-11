@@ -23,3 +23,6 @@
 <?php
 
 ?>
+
+
+<?php template_footer() ?>
