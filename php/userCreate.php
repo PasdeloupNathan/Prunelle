@@ -78,8 +78,5 @@ function checkboxvalue() {
 
 // mail($to,$subject,$txt,$headers);
 
-
+template_footer()
 ?>
-
-</body>
-</html>

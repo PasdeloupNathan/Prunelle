@@ -14,7 +14,7 @@ function template_meta($title) {
         <link rel="stylesheet" href="../css/prunelle.css">
     </head>
 
-    <body>
+   
 EOT;
 }
 
@@ -33,6 +33,8 @@ function template_header($title) {
         <button class="col-2" onclick="location.href='./deco.php'" >Se déconnecter</button>
  
     </header>
+    
+    <body>
 EOT;
 }
 
@@ -43,6 +45,22 @@ function template_headerEmpty($title) {
 
 
     </header>
+
+    <body>
+
 EOT;
 }
+
+function template_footer(){
+    echo<<<EOT
+
+    </body>
+
+    <footer></footer>
+    
+    </html>
+EOT;
+}
+
 ?>
+
