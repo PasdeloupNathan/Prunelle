@@ -23,7 +23,7 @@ $produit= $test->fetchAll(\PDO::FETCH_ASSOC);
 foreach($produit as $produits):echo
 <<<produit
   
-    <li > $produits[nom] | $produits[codeproduit] | $produits[taille] | $produits[affichagenom]</li>
+    <li > $produits[nom] | $produits[codeproduit] | $produits[prix]€ |</li>
 
 produit;
 endforeach; ?>

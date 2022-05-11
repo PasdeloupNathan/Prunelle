@@ -12,9 +12,8 @@ CREATE TABLE `produit` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(320) NOT NULL,
   `codeproduit` varchar(320) NOT NULL,
-  `taille` varchar(128) NOT NULL,
-  `affichagenom` varchar(128) NOT NULL,
-  `prix` float(5) NULL,
+  `taille` varchar(128) NULL,
+  `prix` float(5),
   PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

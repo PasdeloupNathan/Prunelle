@@ -14,10 +14,10 @@ function pdo_connect_mysql() {
 
 // CREATION PRODUIT //
 
-function produitAdd($affichagenom,$nom,$codeproduit,$taille) {
+function produitAdd($nom,$codeproduit,$prix) {
 	try {
 		$con = pdo_connect_mysql();
-		$sql = "INSERT INTO `produit` (`id`,`affichagenom`, `nom`, `codeproduit`, `taille`, `prix`) VALUES (NULL, '$affichagenom', '$nom', '$codeproduit', '$taille', Null);";
+		$sql = "INSERT INTO `produit` (`id`, `nom`, `codeproduit`, `prix`, `taille`) VALUES (NULL, '$nom', '$codeproduit', '$prix', Null);";
 		$con->exec($sql);
 	}
 	catch(PDOException $e) {
