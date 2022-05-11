@@ -3,7 +3,15 @@
 
    template_meta('BDD');
 
-   template_header('bdd');
+   if($_SESSION["roles"] == 'admin'){
+    template_headerAdmin();
+ 
+}elseif($_SESSION["roles"] == 'notadmin'){
+
+    template_headerNotAdmin();
+}elseif($_SESSION == False){
+    header("Location: connect.php");
+}
    ?>
 
 <section class="bddAdd">

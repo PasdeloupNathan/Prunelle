@@ -8,7 +8,15 @@
 
     template_meta('Utilisateur');
 
-    template_header('Utilisateur');
+    if($_SESSION["roles"] == 'admin'){
+        template_headerAdmin();
+     
+    }elseif($_SESSION["roles"] == 'notadmin'){
+    
+        header("Location: formulaires.php");
+    }elseif($_SESSION == False){
+        header("Location: connect.php");
+    }
 ?>
 
 

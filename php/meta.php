@@ -19,7 +19,7 @@ EOT;
 }
 
 
-function template_header() {
+function template_headerAdmin() {
     echo<<<EOT
     <header class="row align-items-center ">
 
@@ -30,6 +30,24 @@ function template_header() {
         <a href="./ficheecoles.php" class="col-1">Fiches écoles</a>
         <a href="./enregcommande.php" class="col-2">Enregistrement des commandes</a>
         <a href="./admin.php" class="col-2">Administrateur</a>
+        <button class="col-2" onclick="location.href='./deco.php'" >Se déconnecter</button>
+ 
+    </header>
+
+    
+EOT;
+}
+
+function template_headerNotAdmin() {
+    echo<<<EOT
+    <header class="row align-items-center ">
+
+        <a href="./formulaires.php" class="col-2">Formulaire</a>
+        <a href="./bdd.php" class="col-1">BDD</a>
+        <a href="./affichage.php" class="col-2">Affichage</a>
+        <a href="./factures.php" class="col-1">Factures</a>
+        <a href="./ficheecoles.php" class="col-2">Fiches écoles</a>
+        <a href="./enregcommande.php" class="col-2">Enregistrement des commandes</a>
         <button class="col-2" onclick="location.href='./deco.php'" >Se déconnecter</button>
  
     </header>

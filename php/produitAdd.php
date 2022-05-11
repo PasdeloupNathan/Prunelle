@@ -8,7 +8,15 @@ include 'meta.php';
 
 template_meta('Produits');
 
-template_header('Produits');
+if($_SESSION["roles"] == 'admin'){
+    template_headerAdmin();
+ 
+}elseif($_SESSION["roles"] == 'notadmin'){
+
+    header("Location: formulaires.php");
+}elseif($_SESSION == False){
+    header("Location: connect.php");
+}
 
 ?>
 

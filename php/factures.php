@@ -3,7 +3,15 @@
 
    template_meta('Factures');
 
-   template_header('factures');
+   if($_SESSION["roles"] == 'admin'){
+    template_headerAdmin();
+ 
+}elseif($_SESSION["roles"] == 'notadmin'){
+
+    template_headerNotAdmin();
+}elseif($_SESSION == False){
+    header("Location: connect.php");
+}
 ?>
 
 <section class="factures">

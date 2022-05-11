@@ -3,7 +3,15 @@
 
    template_meta('Formulaires');
 
-   template_header('Formulaires');
+   if($_SESSION["roles"] == 'admin'){
+    template_headerAdmin();
+ 
+}elseif($_SESSION["roles"] == 'notadmin'){
+
+    template_headerNotAdmin();
+}elseif($_SESSION == False){
+    header("Location: connect.php");
+}
 ?>
     <section class="formPDV align-items-center">
 
