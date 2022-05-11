@@ -23,7 +23,7 @@ foreach($user as $users):echo
 <<<user
   
     <li > $users[username] | $users[mail] | $users[roles]</li>
-  
+
 user;
 endforeach; ?>
 

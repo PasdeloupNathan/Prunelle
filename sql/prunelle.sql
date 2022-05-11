@@ -16,7 +16,7 @@ CREATE TABLE `produit` (
   `affichagenom` varchar(128) NOT NULL,
   `prix` float(5) NULL,
   PRIMARY KEY (`id`)
-)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 CREATE TABLE `ecole` (
