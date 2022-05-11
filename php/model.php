@@ -12,6 +12,20 @@ function pdo_connect_mysql() {
 }
 
 
+// CREATION PRODUIT //
+
+function produitAdd($affichagenom,$nom,$codeproduit,$taille) {
+	try {
+		$con = pdo_connect_mysql();
+		$sql = "INSERT INTO `produit` (`id`,`affichagenom`, `nom`, `codeproduit`, `taille`, `prix`) VALUES (NULL, '$affichagenom', '$nom', '$codeproduit', '$taille', Null);";
+		$con->exec($sql);
+	}
+	catch(PDOException $e) {
+		echo $sql . "<br>" . $e->getMessage();
+	}
+}
+
+
 // INSCRIPTION //
 
 function userCreate($roles,$username,$mail) {

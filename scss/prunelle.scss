@@ -477,6 +477,7 @@ header {
         .form10 {
             margin-top: 2.5%;
             form {
+                height: 100%;
                 margin-left: 10%;
                 select {
                     width: 45%;
@@ -493,7 +494,6 @@ header {
                 }
             }
             button#b11 {
-                margin-left: 6%;
                 width: 50%;
                 margin-top: 10%;
                 height: 17.5%;

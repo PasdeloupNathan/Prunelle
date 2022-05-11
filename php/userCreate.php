@@ -70,13 +70,13 @@ function checkboxvalue() {
     }
 }
 
-$to = "pasdeloupnathan@gmail.com, ";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: pasdeloupnathan@gmail.com" . "\r\n" .
-"CC: gamee8678@gmail.com";
+// $to = "pasdeloupnathan@gmail.com, ";
+// $subject = "My subject";
+// $txt = "Hello world!";
+// $headers = "From: pasdeloupnathan@gmail.com" . "\r\n" .
+// "CC: gamee8678@gmail.com";
 
-mail($to,$subject,$txt,$headers);
+// mail($to,$subject,$txt,$headers);
 
 
 ?>
