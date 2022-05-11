@@ -25,9 +25,9 @@
 
         <form action="#" method="POST">
             <label for="username" id="lab10">Nom d'utilisateurs</label>
-            <input type="text" placeholder="Nom d'utilisateurs" name="username">
+            <input type="text" placeholder="Nom d'utilisateurs" name="username" required >
             <label for="mail" id="lab10">Email</label>
-            <input type="email" placeholder="Email" name="mail">
+            <input type="email" placeholder="Email" name="mail" required >
             <br>
             <input type="hidden" name="roles" value="notadmin">
             <input id="inpc3" type="checkbox" value="notadmin" name="roles" onclick='checkboxvalue();'>
@@ -56,7 +56,7 @@
     if($users){
         echo 'cette addresse mail est deja utilisé<p>';
     }else{
-        echo '<script LANGUAGE="javascript">document.location.href="admin.php"</script>';
+        echo '<script LANGUAGE="javascript">document.location.href="userList.php"</script>';
  die(userCreate($roles,$username,$mail));
     }
 }

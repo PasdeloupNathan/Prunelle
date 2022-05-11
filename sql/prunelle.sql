@@ -13,6 +13,7 @@ CREATE TABLE `produit` (
   `nom` varchar(320) NOT NULL,
   `codeproduit` varchar(320) NOT NULL,
   `taille` varchar(128) NULL,
+  `affichagenom`varchar(3) NOT NULL,
   `prix` float(5),
   PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
