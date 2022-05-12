@@ -38,3 +38,16 @@ function userCreate($roles,$username,$mail) {
 		echo $sql . "<br>" . $e->getMessage();
 	}
 }
+
+// CREATION INTERVANANT //
+
+function intervenantCreate($prenom,$nom,$salaire) {
+	try {
+		$con = pdo_connect_mysql();
+		$sql = "INSERT INTO `intervenant` (`id`,`prenom`, `nom`, `salaire`) VALUES (NULL, '$prenom', '$nom', '$salaire');";
+		$con->exec($sql);
+	}
+	catch(PDOException $e) {
+		echo $sql . "<br>" . $e->getMessage();
+	}
+}

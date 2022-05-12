@@ -18,6 +18,13 @@ CREATE TABLE `produit` (
   PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE `intervenant` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prenom` varchar(320) NOT NULL,
+  `nom` varchar(320) NOT NULL,
+  `salaire` float(5),
+  PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `ecole` (
   `CODEECOLE` int(11) NOT NULL,
