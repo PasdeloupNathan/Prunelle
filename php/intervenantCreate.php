@@ -33,13 +33,13 @@
 
         <form action="#" method="POST">
             <label for="prenom" id="lab13">Prenom</label>
-            <input type="text" placeholder="Prenom" name="prenom" required >
+            <input type="text" placeholder="Prenom" name="prenom" required>
             <label for="nom" id="lab13">Nom</label>
-            <input type="text" placeholder="nom" name="nom" required >
+            <input type="text" placeholder="nom" name="nom" required>
             <label for="salaire" id="lab13">Salaire</label>
-            <input type="text" placeholder="Salaire" name="salaire" required >
-
-            <button id="b13" name="intervenantCreate" type="submit">Enregistrer</button>
+            <input type="text" placeholder="Salaire" name="salaire" required>
+            <button id="b13" name="intervenantCreate" type="submit"'>Enregistrer</button>
+            <p id="error"></p>
         </form>
         
 
@@ -55,7 +55,6 @@
         $prenom=$_POST["prenom"];
         $nom=$_POST["nom"];
         $salaire=$_POST["salaire"];
-
         $stmt = $pdo->prepare("SELECT * FROM intervenant WHERE nom=?");
         $stmt->execute([$nom]);
         $intervenant = $stmt->fetch();
@@ -69,6 +68,7 @@
         die(intervenantCreate($prenom,$nom,$salaire));
     }
 }
+
 
 
 
