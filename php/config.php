@@ -1,5 +1,5 @@
 <?php
-   session_start();
+
  // Errors
  //error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
  error_reporting(E_ALL ^ E_NOTICE);

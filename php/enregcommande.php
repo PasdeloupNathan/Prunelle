@@ -1,4 +1,6 @@
 <?php
+
+session_start();
    include 'meta.php';
 
    template_meta('Enregistrement des commandes');

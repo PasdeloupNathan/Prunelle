@@ -1,4 +1,5 @@
 <?php
+ session_start();
    include 'meta.php';
 
    template_meta('BDD');
