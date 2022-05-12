@@ -56,11 +56,13 @@
         $nom=$_POST["nom"];
         $salaire=$_POST["salaire"];
 
-        $stmt = $pdo->prepare("SELECT * FROM intervenant WHERE prenom=? AND nom=?");
-        $stmt->execute([$prenom]);
+        $stmt = $pdo->prepare("SELECT * FROM intervenant WHERE nom=?");
         $stmt->execute([$nom]);
         $intervenant = $stmt->fetch();
-        if($intervenant){
+        $stmt2 = $pdo->prepare("SELECT * FROM intervenant WHERE prenom=?");
+        $stmt2->execute([$prenom]);
+        $intervenant2 = $stmt2->fetch();
+        if($intervenant && $intervenant2){
             echo "l'intervant existe deja <p>";
         }else{
             echo '<script LANGUAGE="javascript">document.location.href="intervenantList.php"</script>';

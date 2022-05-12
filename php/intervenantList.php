@@ -30,7 +30,7 @@ $intervenant= $test->fetchAll(\PDO::FETCH_ASSOC);
 foreach($intervenant as $intervenants):echo
 <<<user
   
-    <li > $intervenants[prenom] | $intervenants[nom] | $intervenants[salaire] |</li>
+    <li > $intervenants[prenom] | $intervenants[nom] | $intervenants[salaire]€/heure |</li>
 
 user;
 endforeach; ?>
