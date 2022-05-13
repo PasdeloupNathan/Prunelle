@@ -31,14 +31,14 @@
     <div class="col-5"></div>
     <div class="col-3 form13">
 
-        <form action="#" method="POST">
+        <form action="#" method="POST" id="formsubmit1">
             <label for="prenom" id="lab13">Prenom</label>
-            <input type="text" placeholder="Prenom" name="prenom" required>
+            <input type="text" placeholder="Prenom" name="prenom" id="inputjs" required>
             <label for="nom" id="lab13">Nom</label>
-            <input type="text" placeholder="nom" name="nom" required>
+            <input type="text" placeholder="nom" name="nom" id="inputjs2" required>
             <label for="salaire" id="lab13">Salaire</label>
-            <input type="text" placeholder="Salaire" name="salaire" required>
-            <button id="b13" name="intervenantCreate" type="submit"'>Enregistrer</button>
+            <input type="text" placeholder="Salaire" name="salaire" id="inputjs3" required>
+            <button id="b13" name="intervenantCreate" type="submit">Enregistrer</button>
             <p id="error"></p>
         </form>
         
@@ -61,8 +61,11 @@
         $stmt2 = $pdo->prepare("SELECT * FROM intervenant WHERE prenom=?");
         $stmt2->execute([$prenom]);
         $intervenant2 = $stmt2->fetch();
+        $prenom = trim($prenom, " ");
+        $nom = trim($nom, " ");
+        $salaire = trim($salaire, " ");
         if($intervenant && $intervenant2){
-            echo "l'intervant existe deja <p>";
+            echo "l'intervant existe deja ";
         }else{
             echo '<script LANGUAGE="javascript">document.location.href="intervenantList.php"</script>';
         die(intervenantCreate($prenom,$nom,$salaire));

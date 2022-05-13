@@ -1,32 +1,36 @@
+console.log(window.location.pathname);
+
 function checkboxvalue() {
     document.getElementById("inpc3").value = document.getElementById("inpc3").checked ? 'admin' : 'notadmin';
 
-    console.log(document.getElementById("inpc3").value);
+    // console.log(document.getElementById("inpc3").value);
 }
 
 
 function checkboxvalue2() {
     document.getElementById("inpc4").value = document.getElementById("inpc4").checked ? 'oui' : 'non';
-    console.log(document.getElementById("inpc4").value);
+    // console.log(document.getElementById("inpc4").value);
 }
 
-// const form = document.querySelector('form');
-// console.log(form);
+if (window.location.pathname == '/Prunelle/php/intervenantCreate.php') {
 
-// form.addEventListener('submit', function(e) {
-//     let inputval = document.getElementById('inputjs').value;
-//     let inputval2 = document.getElementById('inputjs2').value;
-//     let inputval3 = document.getElementById('inputjs3').value;
+    const form = document.querySelector('form');
+    // console.log(form);
 
-//     console.log(inputval);
-//     console.log(inputval2);
-//     console.log(inputval3);
+    form.addEventListener('submit', function(event) {
+        let inputval = document.getElementById('inputjs').value.trim();
+        let inputval2 = document.getElementById('inputjs2').value.trim();
+        let inputval3 = document.getElementById('inputjs3').value.trim();
+
+        console.log(inputval);
+        console.log(inputval2);
+        console.log(inputval3);
+
+        if (inputval == null || inputval == "", inputval2 == null || inputval2 == "", inputval3 == null || inputval3 == "") {
+            document.getElementById('error').textContent = "Tout les champs ne sont pas remplis";
+            event.preventDefault();
+        }
 
 
-//     if (inputval == '' || inputval2 == '' || inputval3 == '') {
-//         document.getElementById('error').textContent = "Tout les champs ne sont pas remplis";
-//         e.preventDefault();
-//         window.history.back();
-//         console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
-//     }
-// })
+    })
+}
