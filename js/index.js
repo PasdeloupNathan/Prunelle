@@ -1,16 +1,22 @@
 console.log(window.location.pathname);
 
-function checkboxvalue() {
-    document.getElementById("inpc3").value = document.getElementById("inpc3").checked ? 'admin' : 'notadmin';
+if (window.location.pathname == '/Prunelle/php/userCreate.php') {
 
-    // console.log(document.getElementById("inpc3").value);
+    function checkboxvalue() {
+        document.getElementById("inpc3").value = document.getElementById("inpc3").checked ? 'admin' : 'notadmin';
+
+        // console.log(document.getElementById("inpc3").value);
+    }
 }
 
+if (window.location.pathname == '/Prunelle/php/produitAdd.php') {
 
-function checkboxvalue2() {
-    document.getElementById("inpc4").value = document.getElementById("inpc4").checked ? 'oui' : 'non';
-    // console.log(document.getElementById("inpc4").value);
+    function checkboxvalue2() {
+        document.getElementById("inpc4").value = document.getElementById("inpc4").checked ? 'oui' : 'non';
+        // console.log(document.getElementById("inpc4").value);
+    }
 }
+
 
 if (window.location.pathname == '/Prunelle/php/intervenantCreate.php') {
 
