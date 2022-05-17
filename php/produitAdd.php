@@ -32,17 +32,19 @@ if($_SESSION["roles"] == 'admin'){
 
         <form action="#" method="post">
             <label for="Nom du produit" id="lab11">Nom du produit</label>
-            <input type="text" placeholder="Nom du produit" name="nom" required>
+            <input type="text" placeholder="Nom du produit" name="nom" id="inputjs6" required>
             <label for="Code du produit" id="lab11">Code du produit</label>
-            <input type="text" placeholder="Code du produit" name="codeproduit" required>
+            <input type="text" placeholder="Code du produit" name="codeproduit" id="inputjs7" required>
             <label for="prix" id="lab11">Prix du produit</label>
-            <input type="text" placeholder="Prix du produit" name="prix">
+            <input type="text" placeholder="Prix du produit" id="inputjs8" name="prix">
             <br>
             <input type="hidden" name="affichagenom" value="non"> 
             <input id="inpc4" type="checkbox" value="non" name="affichagenom" onclick='checkboxvalue2();'>
             <label for="affichagenom"> Affichage des noms possible</label>
 
             <button id="b11" name="produitAdd" type="submit">Enregistrer</button>
+            <p id="error3"></p>
+
         </form>
        
 
@@ -62,6 +64,9 @@ if($_SESSION["roles"] == 'admin'){
     $stmt = $pdo->prepare("SELECT * FROM produit WHERE codeproduit=?");
     $stmt->execute([$codeproduit]);
     $produits = $stmt->fetch();
+    $nom = trim($nom, " ");
+    $codeproduit = trim($codeproduit, " ");
+    $prix = trim($prix, " ");
     if($produits){
         echo 'Ce produit existe deja<p>';
     }else{

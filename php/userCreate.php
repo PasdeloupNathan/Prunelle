@@ -42,7 +42,7 @@
             <label for="admin" id="lab10">Administrateur</label>
 
             <button id="b8" name="userCreate" type="submit">Enregistrer</button>
-            <p id="error"></p>
+            <p id="error2"></p>
 
         </form>
         

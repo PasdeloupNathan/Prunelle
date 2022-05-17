@@ -25,7 +25,6 @@ if (window.location.pathname == '/Prunelle/php/intervenantCreate.php') {
         let inputval = document.getElementById('inputjs').value.trim();
         let inputval2 = document.getElementById('inputjs2').value.trim();
         let inputval3 = document.getElementById('inputjs3').value.trim();
-
         // console.log(inputval);
         // console.log(inputval2);
         // console.log(inputval3);
@@ -41,7 +40,6 @@ if (window.location.pathname == '/Prunelle/php/userCreate.php') {
 
     const form = document.querySelector('form');
 
-
     form.addEventListener('submit', function(event) {
         let inputval4 = document.getElementById('inputjs4').value.trim();
         let inputval5 = document.getElementById('inputjs5').value.trim();
@@ -51,6 +49,17 @@ if (window.location.pathname == '/Prunelle/php/userCreate.php') {
 
         if (inputval4 == null || inputval4 == "", inputval5 == null || inputval5 == "") {
             document.getElementById('error').textContent = "Tout les champs ne sont pas remplis";
+
+    form.addEventListener('submit', function(event) {
+        let inputval6 = document.getElementById('inputjs6').value.trim();
+        let inputval7 = document.getElementById('inputjs7').value.trim();
+        let inputval8 = document.getElementById('inputjs8').value.trim();
+        // console.log(inputval6);
+        // console.log(inputval7);
+        // console.log(inputval8);
+
+        if (inputval6 == null || inputval6 == "", inputval7 == null || inputval7 == "", inputval8 == null || inputval8 == "") {
+            document.getElementById('error3').textContent = "Tout les champs ne sont pas remplis";
             event.preventDefault();
         }
     })
