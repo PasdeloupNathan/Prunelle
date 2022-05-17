@@ -33,15 +33,17 @@
 
         <form action="#" method="POST">
             <label for="username" id="lab10">Nom d'utilisateurs</label>
-            <input type="text" placeholder="Nom d'utilisateurs" name="username" required >
+            <input type="text" placeholder="Nom d'utilisateurs" name="username" id="inputjs4" required >
             <label for="mail" id="lab10">Email</label>
-            <input type="email" placeholder="Email" name="mail" required >
+            <input type="email" placeholder="Email" name="mail" id="inputjs5" required >
             <br>
             <input type="hidden" name="roles" value="notadmin">
             <input id="inpc3" type="checkbox" value="notadmin" name="roles" onclick='checkboxvalue();'>
             <label for="admin" id="lab10">Administrateur</label>
 
             <button id="b8" name="userCreate" type="submit">Enregistrer</button>
+            <p id="error"></p>
+
         </form>
         
 
@@ -61,6 +63,8 @@
     $stmt = $pdo->prepare("SELECT * FROM user WHERE mail=?");
     $stmt->execute([$mail]);
     $users = $stmt->fetch();
+    $username = trim($username, " ");
+    $mail = trim($mail, " ");
     if($users){
         echo 'cette addresse mail est deja utilisé<p>';
     }else{

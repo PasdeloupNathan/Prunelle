@@ -27,19 +27,21 @@ CREATE TABLE `intervenant` (
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `ecole` (
-  `CODEECOLE` int(11) NOT NULL,
+  `codeecole` int(11) NOT NULL,
+  `datepdv` DATE NULL,
+  `datepdvgrp` DATE NULL,
+  `genre` varchar(20) NULL,
+  `nom` varchar(50) NULL,
+  `ville` varchar(50) NULL,
+  `email` varchar(75) NULL,
+  `adresse` varchar(100) NULL,
+  `codepostal` int(6) NULL,
+  `telephone` int(10) NULL,
+  `direction` varchar(50) NULL,
+  `nbreleve` int(5) NULL,
   PRIMARY KEY (`CODEECOLE`)
-)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `intervenant` (
-  `ID` int(11) NOT NULL,
-  `NOM` varchar(320 NOT NULL,
-)
-
-CREATE TABLE `produit` (
-  `ID` int(11) NOT NULL,
-
-)
 
 -- CREATE TABLE `PDV` (
 
@@ -53,21 +55,4 @@ CREATE TABLE `produit` (
 -- CREATE TABLE `LIVRAISON` (
 
 -- )
--- CREATE TABLE `FACTURE` (
-
--- )
--- CREATE TABLE `PDV` (
-
--- )
--- CREATE TABLE `EMPOCHAGE` (
-
--- )
--- CREATE TABLE `OUTPOST` (
-
--- )
--- CREATE TABLE `LIVRAISON` (
-
--- )
--- CREATE TABLE `FACTURE` (
-
--- )
+-- CREATE TABLE `FACTURE` 
