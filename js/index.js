@@ -4,7 +4,6 @@ if (window.location.pathname == '/Prunelle/php/userCreate.php') {
 
     function checkboxvalue() {
         document.getElementById("inpc3").value = document.getElementById("inpc3").checked ? 'admin' : 'notadmin';
-
         // console.log(document.getElementById("inpc3").value);
     }
 }
@@ -17,7 +16,6 @@ if (window.location.pathname == '/Prunelle/php/produitAdd.php') {
     }
 }
 
-
 if (window.location.pathname == '/Prunelle/php/intervenantCreate.php') {
 
     const form = document.querySelector('form');
@@ -28,16 +26,14 @@ if (window.location.pathname == '/Prunelle/php/intervenantCreate.php') {
         let inputval2 = document.getElementById('inputjs2').value.trim();
         let inputval3 = document.getElementById('inputjs3').value.trim();
 
-        console.log(inputval);
-        console.log(inputval2);
-        console.log(inputval3);
+        // console.log(inputval);
+        // console.log(inputval2);
+        // console.log(inputval3);
 
         if (inputval == null || inputval == "", inputval2 == null || inputval2 == "", inputval3 == null || inputval3 == "") {
             document.getElementById('error').textContent = "Tout les champs ne sont pas remplis";
             event.preventDefault();
         }
-
-
     })
 }
 
@@ -50,14 +46,12 @@ if (window.location.pathname == '/Prunelle/php/userCreate.php') {
         let inputval4 = document.getElementById('inputjs4').value.trim();
         let inputval5 = document.getElementById('inputjs5').value.trim();
 
-        console.log(inputval4);
-        console.log(inputval5);
+        // console.log(inputval4);
+        // console.log(inputval5);
 
         if (inputval4 == null || inputval4 == "", inputval5 == null || inputval5 == "") {
             document.getElementById('error').textContent = "Tout les champs ne sont pas remplis";
             event.preventDefault();
         }
-
-
     })
 }
