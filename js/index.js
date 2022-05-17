@@ -43,12 +43,19 @@ if (window.location.pathname == '/Prunelle/php/userCreate.php') {
     form.addEventListener('submit', function(event) {
         let inputval4 = document.getElementById('inputjs4').value.trim();
         let inputval5 = document.getElementById('inputjs5').value.trim();
-
         // console.log(inputval4);
         // console.log(inputval5);
 
         if (inputval4 == null || inputval4 == "", inputval5 == null || inputval5 == "") {
-            document.getElementById('error').textContent = "Tout les champs ne sont pas remplis";
+            document.getElementById('error2').textContent = "Tout les champs ne sont pas remplis";
+            event.preventDefault();
+        }
+    })
+}
+
+if (window.location.pathname == '/Prunelle/php/produitAdd.php') {
+
+    const form = document.querySelector('form');
 
     form.addEventListener('submit', function(event) {
         let inputval6 = document.getElementById('inputjs6').value.trim();
