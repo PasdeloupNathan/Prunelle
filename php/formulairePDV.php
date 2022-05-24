@@ -183,7 +183,7 @@
 
             </div>
 
-            <!-- COL 5 -->
+            <!-- COL 6 -->
 
             <div class="col-2">
 
