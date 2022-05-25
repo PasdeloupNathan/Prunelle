@@ -82,7 +82,7 @@ CREATE TABLE `OUTPOST` (
   `codeecole` int(11) NOT NULL, 
   `datejob` DATE NOT NULL,
   `nomecole` varchar(50) NOT NULL,
-  `nomcreateurjob` varchar(50) NOT NULL,
+  `createurjob` varchar(50) NOT NULL,
   `ville` varchar(50) NOT NULL,
   `typejob` varchar(75) NOT NULL,
   `commentaireoutpost` varchar(400) NULL,
