@@ -200,7 +200,7 @@
 
             </div>
 
-            <div class="row">
+            <div class="btntxtarea row">
                 <div class="col-5"></div>
                 <div class="col-2">
                     <label id="txtarea" for="commentairepdv">Commentaire</label>
@@ -210,7 +210,6 @@
             <div class="col-5"></div>
 
             </div>
-            <!-- `commentairepdv` varchar(400) NULL  -->
             
             
         </form>
